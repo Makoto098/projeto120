@@ -2,44 +2,270 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  
     <title>Estudo de Caso - Identificação de Objetos</title>
   </head>
   <body>
      <header>
         <h1>Estudo de Caso - Identificação de Objetos</h1>
-        </header>
-
-        <section class="image-container">
-        <!-- Insira as imagens aqui usando a tag img -->
-        <img
-         class="image1"
-            src="garrafita.jpeg"
-            alt="Objeto 1"/>
-      <img
-        class="image2"
-        src="OIP.jpeg"
-        alt="Objeto 2"/>
-      <!-- Adicione mais imagens conforme necessário -->
-    </section>
-
+      </header>
+      
     <section class="result-container">
       <h2>Resultado do Google Lens</h2>
-      <p><!-- Span/p/any vazio para preenchimento no próximo projeto --></p>
+      <span><!-- Span/p/any vazio para preenchimento no próximo projeto --></span>
 
       <h2>Resultado do App Web de Identificação de Imagem em Tempo Real</h2>
-      <p><!-- Span/p/any vazio para preenchimento no próximo projeto --></p>
+      <span><!-- Span/p/any vazio para preenchimento no próximo projeto --></span>
 
       <h2>Mini Conclusão</h2>
-      <p><!-- Span/p/any vazio para preenchimento no próximo projeto --></p>
+      <span><!-- Span/p/any vazio para preenchimento no próximo projeto --></span>
     </section>
-
-    <footer>
-      <p>Desenvolvido por: Seu Nome</p>
-    </footer>
 
     <section class="overall-conclusion">
       <h2>Conclusão Geral</h2>
-      <p><!-- Span/p/any vazio para preenchimento no próximo projeto --></p>
+      <span><!-- Span/p/any vazio para preenchimento no próximo projeto --></span>
     </section>
+      <ol>
+        <div class="test_image_and_result col-xs-12">
+          <li class="col-sn-4 col-xs-12">
+            <b>Imagem teste:</b>
+            <img src="garrafita.jpeg" class="img-responsive">
+          </li>
+
+          <h5 class="col-sn-4 col-xs-12">
+            Resultado no<b>GOOGLE LENS</b>:
+            <span></span>
+          </h5>
+
+          <h5 class="col-sn-4 col-xs-12">
+            Resultado no <b> Modelo Mobilenet</b>:
+            <span></span>
+          </h5>
+
+          <div class="mini_result" class="col-xs-12">
+            <h4>Resultado:</h4>
+            <hr>
+            <h4></h4>
+          </div>
+        </div>
+
+        <div class="test_image_and_result2 col-xs-12">
+          <li class="col-sn-4 col-xs-12">
+            <b>Imagem teste:</b>
+            <img src="OIP.jpeg" class="img-responsive">
+          </li>
+
+          <h5 class="col-sn-4 col-xs-12">
+            Resultado no<b>GOOGLE LENS</b>:
+            <span></span>
+          </h5>
+
+          <h5 class="col-sn-4 col-xs-12">
+            Resultado no <b> Modelo Mobilenet</b>:
+            <span></span>
+          </h5>
+
+          <div class="mini_result" class="col-xs-12">
+            <h4>Resultado:</h4>
+            <hr>
+            <h4></h4>
+          </div>
+        </div>
+
+        <div class="test_image_and_result3 col-xs-12">
+          <li class="col-sn-4 col-xs-12">
+            <b>Imagem teste:</b>
+            <img src="dove.jpeg" class="img-responsive">
+          </li>
+
+          <h5 class="col-sn-4 col-xs-12">
+            Resultado no<b>GOOGLE LENS</b>:
+            <span></span>
+          </h5>
+
+          <h5 class="col-sn-4 col-xs-12">
+            Resultado no <b> Modelo Mobilenet</b>:
+            <span></span>
+          </h5>
+
+          <div class="mini_result" class="col-xs-12">
+            <h4>Resultado:</h4>
+            <hr>
+            <h4></h4>
+          </div>
+        </div>
+
+        <div class="test_image_and_result4 col-xs-12">
+          <li class="col-sn-4 col-xs-12">
+            <b>Imagem teste:</b>
+            <img src="ventilador.jpeg" class="img-responsive">
+          </li>
+
+          <h5 class="col-sn-4 col-xs-12">
+            Resultado no<b>GOOGLE LENS</b>:
+            <span></span>
+          </h5>
+
+          <h5 class="col-sn-4 col-xs-12">
+            Resultado no <b> Modelo Mobilenet</b>:
+            <span></span>
+          </h5>
+
+          <div class="mini_result" class="col-xs-12">
+            <h4>Resultado:</h4>
+            <hr>
+            <h4></h4>
+          </div>
+        </div>
+
+        <div class="test_image_and_result5 col-xs-12">
+          <li class="col-sn-4 col-xs-12">
+            <b>Imagem teste:</b>
+            <img src="tra.jpg" class="img-responsive">
+          </li>
+
+          <h5 class="col-sn-4 col-xs-12">
+            Resultado no<b>GOOGLE LENS</b>:
+            <span></span>
+          </h5>
+
+          <h5 class="col-sn-4 col-xs-12">
+            Resultado no <b> Modelo Mobilenet</b>:
+            <span></span>
+          </h5>
+
+          <div class="mini_result" class="col-xs-12">
+            <h4>Resultado:</h4>
+            <hr>
+            <h4></h4>
+          </div>
+        </div>
+
+        <div class="test_image_and_result6 col-xs-12">
+          <li class="col-sn-4 col-xs-12">
+            <b>Imagem teste:</b>
+            <img src="Concha de Kaoru Shinko.jpeg" class="img-responsive">
+          </li>
+
+          <h5 class="col-sn-4 col-xs-12">
+            Resultado no<b>GOOGLE LENS</b>:
+            <span></span>
+          </h5>
+
+          <h5 class="col-sn-4 col-xs-12">
+            Resultado no <b> Modelo Mobilenet</b>:
+            <span></span>
+          </h5>
+
+          <div class="mini_result" class="col-xs-12">
+            <h4>Resultado:</h4>
+            <hr>
+            <h4></h4>
+          </div>
+        </div>
+
+        <div class="test_image_and_result7 col-xs-12">
+          <li class="col-sn-4 col-xs-12">
+            <b>Imagem teste:</b>
+            <img src="anel.jpeg" class="img-responsive">
+          </li>
+
+          <h5 class="col-sn-4 col-xs-12">
+            Resultado no<b>GOOGLE LENS</b>:
+            <span></span>
+          </h5>
+
+          <h5 class="col-sn-4 col-xs-12">
+            Resultado no <b> Modelo Mobilenet</b>:
+            <span></span>
+          </h5>
+
+          <div class="mini_result" class="col-xs-12">
+            <h4>Resultado:</h4>
+            <hr>
+            <h4></h4>
+          </div>
+        </div>
+
+        <div class="test_image_and_result8 col-xs-12">
+          <li class="col-sn-4 col-xs-12">
+            <b>Imagem teste:</b>
+            <img src="CAMA.jpg" class="img-responsive">
+          </li>
+
+          <h5 class="col-sn-4 col-xs-12">
+            Resultado no<b>GOOGLE LENS</b>:
+            <span></span>
+          </h5>
+
+          <h5 class="col-sn-4 col-xs-12">
+            Resultado no <b> Modelo Mobilenet</b>:
+            <span></span>
+          </h5>
+
+          <div class="mini_result" class="col-xs-12">
+            <h4>Resultado:</h4>
+            <hr>
+            <h4></h4>
+          </div>
+        </div>
+
+        <div class="test_image_and_result9 col-xs-12">
+          <li class="col-sn-4 col-xs-12">
+            <b>Imagem teste:</b>
+            <img src="smartphone.jpg" class="img-responsive">
+          </li>
+
+          <h5 class="col-sn-4 col-xs-12">
+            Resultado no<b>GOOGLE LENS</b>:
+            <span></span>
+          </h5>
+
+          <h5 class="col-sn-4 col-xs-12">
+            Resultado no <b> Modelo Mobilenet</b>:
+            <span></span>
+          </h5>
+
+          <div class="mini_result" class="col-xs-12">
+            <h4>Resultado:</h4>
+            <hr>
+            <h4></h4>
+          </div>
+        </div>
+
+        <div class="test_image_and_result10 col-xs-12">
+          <li class="col-sn-4 col-xs-12">
+            <b>Imagem teste:</b>
+            <img src="cabides.jpg" class="img-responsive">
+          </li>
+
+          <h5 class="col-sn-4 col-xs-12">
+            Resultado no<b>GOOGLE LENS</b>:
+            <span></span>
+          </h5>
+
+          <h5 class="col-sn-4 col-xs-12">
+            Resultado no <b> Modelo Mobilenet</b>:
+            <span></span>
+          </h5>
+
+          <div class="mini_result" class="col-xs-12">
+            <h4>Resultado:</h4>
+            <hr>
+            <h4></h4>
+          </div>
+        </div>
+      </ol>
+      
+      <div class="copyrightFooter">
+        Desenvolvido por -- Sandy
+      </div>
   </body>
 </html>
